@@ -1,0 +1,76 @@
+SELECT * From baby_names
+
+SELECT * FROM baby_Names ;
+SELECT *
+From  baby_names 
+WHERE first_name = 'Emily';
+
+
+SELECT  Id , first_name
+From  baby_names 
+WHERE first_name = 'Mary';
+
+DELETE FROM baby_names
+WHERE id = 7;
+
+DELETE FROM baby_names
+WHERE id = 3;
+--------------------------
+
+
+SELECT * FROM baby_Names
+
+
+SELECT * FROM baby_Names
+WHERE first_name = 'Erin'
+	or Id = ' 33042'
+	
+
+
+-----
+---number of rows--33043 lastname Zyrin 
+SELECT COUNT (total_named) from baby_names
+	
+SELECT COUNT(first_name) FROM baby_names;
+----
+
+SELECT MIN (total_named) FROM baby_names;
+--5
+SELECT MAX (total_named) FROM baby_names;
+--Emma 20799
+
+-------------------
+SELECT   first_name , total_named
+From   baby_names
+WHERE gender = 'F';
+
+SELECT   first_name , total_named
+From   baby_names
+WHERE gender = 'M';
+
+-----------------------------------------
+
+--------------------
+
+SELECT * FROM output_mortality
+
+
+
+-----------------------------
+SELECT COUNT(gender) FROM output_mortality
+
+select * from output_mortality
+
+SELECT  Id , gender
+From   output_mortality
+WHERE gender = 'M';
+
+
+
+SELECT  Id , gender
+From   output_mortality
+WHERE gender = 'F';
+
+
+SELECT AVG(age)
+FROM output_mortality;
