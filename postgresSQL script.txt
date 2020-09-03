@@ -1,3 +1,23 @@
+Drop TABLE Baby_Names
+Drop TABLE output_mortality
+CREATE TABLE baby_Names (
+Id int ,
+first_Name Varchar (30) not null , 
+    
+    Birth_Year INT , 
+    
+Gender Varchar (10) not null,
+Total_Named INT);
+
+------------------------
+CREATE TABLE output_mortality (
+Id INT ,
+gender Varchar (10) NOT NUll  ,
+age INT );
+
+
+
+
 SELECT * From baby_names
 
 SELECT * FROM baby_Names ;
